@@ -49,7 +49,7 @@ const updateEmail = async (userId, newUser) => {
     const newVerifyEmail = {
       to: newUser.email,
       subject: 'Test email',
-      html: `<strong>Please verify your email</strong> <a target="_blank" href="${process.env.DEV_URL}/api/auth/verify/${verificationCode}"> Click the link </a>`,
+      html: `<strong>Please verify your email</strong> <a target="_blank" href="${process.env.BASE_URL}/api/auth/verify/${verificationCode}"> Click the link </a>`,
     };
 
     await sendEmail(newVerifyEmail);

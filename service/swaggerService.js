@@ -19,7 +19,7 @@ const swaggerSetups = () => {
 
     servers: [
       {
-        url: process.env.DEV_URL,
+        url: process.env.BASE_URL,
         description: 'Development server',
       },
     ],
